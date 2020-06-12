@@ -1,12 +1,12 @@
 # steganography
 Encrypts a text message in an image and decrypts it.
 
-##Files
+## Files
 
-###steganography.py
+### steganography.py
 This is the main file that runs all the functions in functions.py. The first step is to read the image and change it to grayscale so that it is easier to deal with. Then, we encrypt the desired text into the image. After it gets encrypted, the function to decrypt it gets called to show the user what they wrote into the image.
 
-###functions.py
+### functions.py
 There are three main functions in the file. image_grayscale() receives and input image such at saturn.png. It makes sure to convert it to an grayscale image and determines the resolution. An RBG image is a consists of three 2D arrays (Red, Blue, Green). To convert it to grayscale, a mean is taken based on an equation so that we can have only one 2D array with the intensities. The intensity simply is how brigth the pixel is, and the value lies between 0 and 255.
 
 Each value in each range is represented by bits. The user has the option to choose the resolution of the intensity. This is important because the less amount of bits each value is represented by, the more evident a change in the image becomes. This functionality still does not work as expected, so there is still room for improvement. 
